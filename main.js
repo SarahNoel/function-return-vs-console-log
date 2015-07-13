@@ -1,21 +1,34 @@
-// Using console.log without return
+// Using console.log without return-
+numCats = prompt("How many cats live in your home?")
 
-var areaC = function(width, height){
-  console.log(width * height);
-};
+function cats (numCats){
+  if (numCats === 0) {
+  console.log("You should get a cat.");
+}else if (numCats === 1) {
+  console.log("Your cat needs a friend.")
+}else {
+    console.log("I hope your cats get along.")
+  }
+}
 
-
-areaC(4,5)
-areaC(90, 100)
-areaC(1,1)
-
+cats(0)
+cats(5)
+cats(1)
 
 // Using return
 
-var areaR = function(width, height){
-    return width*height;
-  }
+numCats = prompt("How many cats live in your home?")
 
-console.log(areaR(6,8))
-console.log(areaR(90, 100))
-console.log(areaR(1,1))
+function cats (numCats){
+  if (numCats === 0) {
+  return("You should get a cat.");
+}else if (numCats === 1) {
+  return("Your cat needs a friend.")
+}else {
+    return("I hope your cats get along.")
+  }
+}
+
+console.log(cats(0));
+console.log(cats(5));
+console.log(cats(1));
